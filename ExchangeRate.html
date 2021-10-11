@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate</title>
+    <link rel="stylesheet" href="ExchangeRate.css">
+    <script src="SetDateToToday.js" defer></script>
+    <script src="ExchangeRate.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>Currency Converter</header>
+        <form action="#">
+            <p>Enter Amount (EUR) : </p>
+            <input type="text" name="input" id="input" placeholder="please enter your value" autocomplete="off">
+            <p>Choose the date : </p>
+            <input type="date" name="date" id="datefield" min="2000-01-01">
+            <br>
+            <select name="currencies" id="currencies">
+                <option value="SELECT THE CURRENCY"  selected>SELECT THE CURRENCY</option>
+                <option value="TND">TND</option>
+                <option value="USD">USD</option>
+                <option value="EGP">EGP</option>
+            </select>
+            <br>
+            <div class="result">
+                
+            </div>
+            <button>Get Exchnage Rate</button>
+        </form>
+    </div>
+   
+</body>
+</html>
