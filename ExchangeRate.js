@@ -1,7 +1,8 @@
 const form = document.querySelector("form");
 let date = document.querySelector("input[type=date]").value;
 console.log(date);
-const url = `http://api.exchangeratesapi.io/v1/${date}?access_key=876fddb6aa3434033523b5285d1992f5&format=1`
+let url = `http://api.exchangeratesapi.io/v1/${date}?access_key=876fddb6aa3434033523b5285d1992f5&format=1`;
+//dateUpdate(url);
 let rates
 form.addEventListener("submit", (e) =>{
     e.preventDefault();
@@ -22,5 +23,6 @@ document.querySelector("button").onclick = () => {
 function dateUpdate(){
     let dateUpdate = document.querySelector("input[type=date]").value;
     date = dateUpdate;
+    url = `http://api.exchangeratesapi.io/v1/${date}?access_key=876fddb6aa3434033523b5285d1992f5&format=1`
     console.log(date);
 }
