@@ -16,7 +16,7 @@
             <p>Enter Amount (EUR) : </p>
             <input type="text" name="input" id="input" placeholder="please enter your value" autocomplete="off">
             <p>Choose the date : </p>
-            <input type="date" name="date" id="datefield" min="2000-01-01">
+            <input type="date" name="date" id="datefield" min="2000-01-01" onclick="dateUpdate()">
             <br>
             <select name="currencies" id="currencies">
                 <option value="SELECT THE CURRENCY"  selected>SELECT THE CURRENCY</option>
@@ -31,6 +31,8 @@
             <button>Get Exchnage Rate</button>
         </form>
     </div>
-   
+    <div class="small">
+        <small>created by Yasmine Rajhi</small>
+    </div>
 </body>
 </html>
